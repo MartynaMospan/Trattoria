@@ -1,0 +1,44 @@
+[
+  {
+    "username": "User1",
+    "orderedPizzas": [
+      {
+        "pizzaType": "MARGHERITA",
+        "customizedIngredients": [
+          "dough",
+          "tomato sauce",
+          "mozzarella"
+        ]
+      }
+    ]
+  },
+  {
+    "username": "User2",
+    "orderedPizzas": [
+      {
+        "pizzaType": "MARGHERITA",
+        "customizedIngredients": [
+          "dough",
+          "tomato sauce",
+          "mozzarella"
+        ]
+      }
+    ]
+  },
+  {
+    "username": "User1",
+    "orderedPizzas": [
+      {
+        "pizzaType": "CALZONE",
+        "customizedIngredients": [
+          "dough",
+          "tomato sauce",
+          "mozzarella",
+          "olives",
+          "ham",
+          "tomatoes"
+        ]
+      }
+    ]
+  }
+]

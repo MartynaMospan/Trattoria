@@ -7,7 +7,9 @@ public class Service {
 
     SimplePizzaFactory pizzaFactory = new SimplePizzaFactory();
     OrderBuilder orderBuilder;
+    OrderRepository orderRepository = new OrderRepository();
     Order currentOrder;
+
 
 
     Boolean addPizzaToOrder(String pizzaTypeInputString, ArrayList<String> addedIngredients, ArrayList<String> removedIngredients){
@@ -48,11 +50,12 @@ public class Service {
 
 
     public double calculateCostOfOrder() {
-        return currentOrder.getPrice();
+        return orderBuilder.setPrice();
     }
 
     public void buildOrder() {
         currentOrder = orderBuilder.getOrder();
+        orderRepository.save(currentOrder);
     }
 
     public String getOrderSummary() {

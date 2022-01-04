@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.NoSuchElementException;
 
 public class SimplePizzaFactory {
@@ -15,8 +16,9 @@ public class SimplePizzaFactory {
     }
 
     PossiblePizzaTypes findPizzaTypeByName(String pizzaTypeInputString) throws EnumConstantNotPresentException{
+        String pizzaTypeStringPrepared = pizzaTypeInputString.toUpperCase();
         for(PossiblePizzaTypes pizzaType: PossiblePizzaTypes.values()){
-            if (pizzaType.name().equals(pizzaTypeInputString)){
+            if (pizzaType.name().equals(pizzaTypeStringPrepared)){
                 return pizzaType;
             }
         }
